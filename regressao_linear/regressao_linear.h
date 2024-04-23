@@ -6,7 +6,6 @@ typedef struct {
     float y;
 } Ponto;
 
-// Protótipos das funções
 void lerDados(const char *nomeArquivo, Ponto **pontos, int *n);
 void calcularRegressao(Ponto *pontos, int n, double *beta0, double *beta1);
 

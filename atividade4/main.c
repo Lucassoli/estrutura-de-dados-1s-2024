@@ -1,5 +1,6 @@
 #include "lista.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     No *lista = lista_criar();
