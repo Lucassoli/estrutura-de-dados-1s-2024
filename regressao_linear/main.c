@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h> 
 #include "regressao_linear.h"
 
 int main(int argc, char *argv[]) {
@@ -15,7 +16,8 @@ int main(int argc, char *argv[]) {
     lerDados(argv[1], &pontos, &n);
     calcularRegressao(pontos, n, &beta0, &beta1);
 
-    printf("y = %.2fx + %.2f\n", beta1, beta0);
+    int beta0_arredondado = (int)round(beta0);
+    printf("y = %.1fx + %d\n", beta1, beta0_arredondado);
 
     free(pontos);
     return 0;
